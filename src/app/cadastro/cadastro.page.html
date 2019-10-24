@@ -1,11 +1,12 @@
 <ion-content fullscreen class="back">
 
   <div style="text-align:center" class="back">
-
-      <ion-fab-button color="success" (click)="comeca()">
+      <ion-progress-bar value="{{0.334*vida}}"></ion-progress-bar>
+      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+          <ion-button color="success" (click)="comeca()">
           <FONT size="4" FACE='Comic Sans MS' COLOR="000"><b>Afofar Adversário</b></FONT>
-      </ion-fab-button>
-      
+      </ion-button>
+      </ion-fab>
     
   </div>
 </ion-content>
