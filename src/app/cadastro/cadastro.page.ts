@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class CadastroPage implements OnInit {
   filme: Filme;
   generos: Array<Genero>;
-  vida=1;
+  vida=10;
   constructor(
     public filmesService: FilmesService,
     public router: Router
@@ -24,11 +24,11 @@ export class CadastroPage implements OnInit {
     this.filmesService.inserir(this.filme).then(
       ()=>{
       console.log('gravado com sucesso');
-      this.voltar();
+      
     });
   }
-  voltar() {
-    this.router.navigate(["home"]);
+  bater() {
+    this.router.navigate(["bater"]);
   }
 
 }
